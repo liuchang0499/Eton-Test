@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { Link } from 'react-router';
 import { Collapse, Col, Row, Button } from 'antd';
 const Panel = Collapse.Panel;
-const des = 'this is a good shirt';
+const des = 'This is a good shirt!';
 const styles = {
   title:{
     fontSize:'24px',
@@ -14,13 +14,24 @@ const styles = {
     fontSize:'24px',
     fontWeight: 'bold',
     textAlign:'center'
+  },
+  button:{
+    width:'200px',
+    height:'40px',
+    backgroundColor:'#eee',
+    fontSize:'16px',
+    color:'#000',
+    textAlign:'center'
+  },
+    productcomponet:{
+    paddingBottom:'20px'
   }
 };
 
-const FullscreenSpots = function FullscreenSpots(props) {
+const ProductSpots = function ProductSpots(props) {
   function render() {
     return (
-      <Row>
+      <Row >
         <Col span={24}><img src={props.imgurl}/></Col>
         <Col span={24} style={styles.title}>{props.title}</Col>
         <Col span={24} style={styles.des}>{props.des}</Col>
@@ -30,41 +41,46 @@ const FullscreenSpots = function FullscreenSpots(props) {
   return render();
 }
 
-const FullscreenTop = function FullscreenTop(props) {
+const ProductTop = function ProductTop(props) {
   function render() {
     return (
-      <Row>
-        <Col span={24}><img src="http://fakeimg.pl/1200x725/"/></Col>
+      <Row style={styles.productcomponet}>
+        <Col span={24}><img src="http://fakeimg.pl/1000x525/"/></Col>
         <Col span={24} style={styles.title}>{props.title}</Col>
         <Col span={24} style={styles.des}>{props.des}</Col>
-        <Col span={8} offset={8}><Button></Button></Col>
+        <Col span={4} offset={10}><Button style={styles.button}>EXPLORE COLLECTION</Button></Col>
       </Row>
     )
   }
   return render();
 }
 
-
 const HomeHero = React.createClass ({
   render(){
     return (
-      <div style= {{ 'paddingBottom': 100, 'backgroundColor': '#ECECEC' }}>
-       <Row type="flex" justify="center">
-          <Col><FullscreenTop title="Spring / Summer 16" des={des} /></Col>
+      <div style= {{ 'paddingBottom': 50, 'backgroundColor': '#ECECEC' }}>
+        <Row >
+          <Col style={styles.productcomponet}>
+            <ProductTop title="Spring / Summer 16" des={des} />
+          </Col>
         </Row>
-        <Row type="flex" justify="center">
-          <Col><FullscreenSpots title="Closel No 1" des={des} imgurl="http://fakeimg.pl/1000x625/"/></Col>
+        <Row>
+          <Col style={styles.productcomponet}>
+            <ProductSpots title="Closel No 1" des={des} imgurl="http://fakeimg.pl/1000x525/"/>
+          </Col>
         </Row>
-        <Row type="flex" justify="center">
-          <Col><FullscreenSpots title="Closel No 2" des={des} imgurl="http://fakeimg.pl/1000x625/"/></Col>
+        <Row>
+          <Col style={styles.productcomponet}>
+            <ProductSpots title="Closel No 2" des={des} imgurl="http://fakeimg.pl/1000x525/"/>
+          </Col>
         </Row>
-        <Row type="flex" justify="center">
-          <Col span={9} offset={2}><FullscreenSpots title="Closel No 5" des={des} imgurl="http://fakeimg.pl/325x400/"/></Col>
-          <Col span={9} offset={2}><FullscreenSpots title="Closel No 6" des={des} imgurl="http://fakeimg.pl/325x400/"/></Col>
+        <Row>
+          <Col span={9} offset={2}><ProductSpots title="Closel No 5" des={des} imgurl="http://fakeimg.pl/350x400/"/></Col>
+          <Col span={9} offset={2}><ProductSpots title="Closel No 6" des={des} imgurl="http://fakeimg.pl/350x400/"/></Col>
         </Row>
-         <Row type="flex" justify="center">
-          <Col span={9} offset={2}><FullscreenSpots title="Closel No 7" des={des} imgurl="http://fakeimg.pl/325x400/"/></Col>
-          <Col span={9} offset={2}><FullscreenSpots title="Closel No 8" des={des} imgurl="http://fakeimg.pl/325x400/"/></Col>
+         <Row>
+          <Col span={9} offset={2}><ProductSpots title="Closel No 7" des={des} imgurl="http://fakeimg.pl/350x400/"/></Col>
+          <Col span={9} offset={2}><ProductSpots title="Closel No 8" des={des} imgurl="http://fakeimg.pl/350x400/"/></Col>
         </Row>
       </div>
     )

@@ -32,13 +32,13 @@ const styles = {
 const Mymenu = (
       <Menu>
         <Menu.Item >
-          <a style={styles.menu} target="_blank" href="http://www.alipay.com/">China</a>
+          <a style={styles.menu} href="http://www.alipay.com/">China</a>
         </Menu.Item>
         <Menu.Item>
-          <a style={styles.menu} target="_blank" href="http://www.taobao.com/">US</a>
+          <a style={styles.menu} href="http://www.taobao.com/">US</a>
         </Menu.Item>
         <Menu.Item>
-          <a style={styles.menu} target="_blank" href="http://www.tmall.com/">UK</a>
+          <a style={styles.menu} href="http://www.tmall.com/">UK</a>
         </Menu.Item>
       </Menu>
     )
