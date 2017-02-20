@@ -4,10 +4,8 @@ import { Link } from 'react-router';
 import { observer, inject } from 'mobx-react';
 import { Row, Col, BackTop, Input, Menu, Icon } from 'antd';
 import request from 'request';
-
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
-
 const styles = {
   stickTop:{
     position: 'fixed',
@@ -26,7 +24,15 @@ const styles = {
     marginRight:'50px',
     marginLeft:'50px'
   },
-
+  shopcar:{
+    fontSize:'16px',
+    textAlign:'right',
+    paddingTop:'20px'
+  },
+  bottomLine:{
+    height: '1px',
+    backgroundColor: '#BFBFBF',
+  }
 }
 
 const Header = inject('store')(function Header (props){
@@ -39,9 +45,16 @@ const Header = inject('store')(function Header (props){
     return (
       <div style={styles.stickTop}>
         <Row>
-          <Col span={16} ><span style={styles.logo}>ETON</span></Col>
-          <Col span={2} offset={1}><Icon type="mail" /></Col>
-          <Col span={2} offset={1}>0 SEK</Col>
+          <Col span={11} ><a style={styles.logo} src="/">ETON</a></Col>
+          <Col span={1} style={styles.shopcar}>
+            <Icon type="pay-circle-o" />
+          </Col>
+          <Col span={1} style={styles.shopcar}>
+            <span>0 SEK</span>
+          </Col>
+        </Row>
+        <Row>
+           <Col span={13} style={styles.bottomLine}></Col>
         </Row>
         <Row >
           <Col span={20} offset={2}>
