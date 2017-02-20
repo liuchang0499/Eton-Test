@@ -16,11 +16,11 @@ const styles = {
     textAlign:'center'
   },
   button:{
-    width:'200px',
+    width:'250px',
     height:'40px',
-    backgroundColor:'#eee',
+    backgroundColor:'#000',
     fontSize:'16px',
-    color:'#000',
+    color:'#fff',
     textAlign:'center'
   },
     productcomponet:{
@@ -48,7 +48,7 @@ const ProductTop = function ProductTop(props) {
         <Col span={24}><img src="http://fakeimg.pl/1000x525/"/></Col>
         <Col span={24} style={styles.title}>{props.title}</Col>
         <Col span={24} style={styles.des}>{props.des}</Col>
-        <Col span={4} offset={10}><Button style={styles.button}>EXPLORE COLLECTION</Button></Col>
+        <Col span={5} offset={9}><Button style={styles.button}>EXPLORE COLLECTION</Button></Col>
       </Row>
     )
   }
