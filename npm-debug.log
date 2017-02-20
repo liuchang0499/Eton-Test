@@ -11,8 +11,8 @@
 6 silly lifecycle 2016_latte@1.6.0~prebabel-node: no script for prebabel-node, continuing
 7 info lifecycle 2016_latte@1.6.0~babel-node: 2016_latte@1.6.0
 8 verbose lifecycle 2016_latte@1.6.0~babel-node: unsafe-perm in lifecycle true
-9 verbose lifecycle 2016_latte@1.6.0~babel-node: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/runoob/2016_lund/node_modules/.bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/runoob/2016_lund/node_modules/.bin:/root/.rbenv/plugins/ruby-build/bin:/root/.rbenv/shims:/root/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
-10 verbose lifecycle 2016_latte@1.6.0~babel-node: CWD: /usr/local/runoob/2016_lund
+9 verbose lifecycle 2016_latte@1.6.0~babel-node: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/lund/MobileDemo/Eton-Test/node_modules/.bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/lund/MobileDemo/Eton-Test/node_modules/.bin:/root/.rbenv/plugins/ruby-build/bin:/root/.rbenv/shims:/root/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+10 verbose lifecycle 2016_latte@1.6.0~babel-node: CWD: /usr/local/lund/MobileDemo/Eton-Test
 11 silly lifecycle 2016_latte@1.6.0~babel-node: Args: [ '-c',
 11 silly lifecycle   'babel-node --presets es2015-node,stage-2 --plugins transform-async-to-generator "./lib/server"' ]
 12 silly lifecycle 2016_latte@1.6.0~babel-node: Returned: code: 1  signal: null
@@ -28,7 +28,7 @@
 14 verbose stack     at maybeClose (internal/child_process.js:885:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid 2016_latte@1.6.0
-16 verbose cwd /usr/local/runoob/2016_lund
+16 verbose cwd /usr/local/lund/MobileDemo/Eton-Test
 17 error Linux 4.2.0-27-generic
 18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run-script" "babel-node" "./lib/server"
 19 error node v7.2.1
