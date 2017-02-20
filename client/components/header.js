@@ -11,7 +11,8 @@ const styles = {
     position: 'fixed',
     zIndex:'98',
     backgroundColor:'#fff',
-    width:'100%'
+    width:'1000px',
+    marginRight:'400px'
   },
   logo:{
     fontSize:'40px'
@@ -45,16 +46,16 @@ const Header = inject('store')(function Header (props){
     return (
       <div style={styles.stickTop}>
         <Row>
-          <Col span={11} ><a style={styles.logo} src="/">ETON</a></Col>
+          <Col span={21} ><a style={styles.logo} src="/">ETON</a></Col>
           <Col span={1} style={styles.shopcar}>
             <Icon type="pay-circle-o" />
           </Col>
-          <Col span={1} style={styles.shopcar}>
+          <Col span={2} style={styles.shopcar}>
             <span>0 SEK</span>
           </Col>
         </Row>
         <Row>
-           <Col span={13} style={styles.bottomLine}></Col>
+           <Col span={24} style={styles.bottomLine}></Col>
         </Row>
         <Row >
           <Col span={20} offset={2}>
